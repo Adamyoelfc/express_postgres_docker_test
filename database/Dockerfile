@@ -1,4 +1,4 @@
-FROM adamyoelfc/express_database
+FROM postgres:13
 
 # Copia el script de inicialización
-COPY init.sql /docker-entrypoint-initdb.d/
+COPY ./init.sql /docker-entrypoint-initdb.d/

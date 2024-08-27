@@ -1,5 +1,8 @@
-CREATE TABLE items (
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
-  description TEXT
+  last_name VARCHAR(100) NOT NULL,
+  email VARCHAR(200) NOT NULL,
+  password VARCHAR(200) NOT NULL,
+  token VARCHAR(300) NOT NULL,
 );
